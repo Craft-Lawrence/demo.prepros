@@ -11,10 +11,11 @@
 	box-sizing: border-box;
 }
 
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+/* Списки */
+ul,
+ol {
 	padding: 0;
+	list-style: none;
 }
 
 /* Убираем внешние отступы */
@@ -41,13 +42,11 @@ body {
 	min-height: 100vh;
 	scroll-behavior: smooth;
 	text-rendering: optimizeSpeed;
-	line-height: 1.5;
 }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
-	list-style: none;
+/* Удаляем подчёркивание */
+a {
+	text-decoration: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
