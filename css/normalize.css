@@ -11,6 +11,24 @@
 	box-sizing: border-box;
 }
 
+/* Flexbox */
+div,
+nav,
+header,
+hgroup,
+footer,
+section,
+article,
+ul,
+ol {
+	display: flex;
+	flex-direction: column;
+}
+/* ul,
+ol {
+	flex-direction: column;
+} */
+
 /* Списки */
 ul,
 ol {
@@ -71,4 +89,12 @@ article > * + * {
 	font: inherit;
 	font-size: inherit;;
 	color: inherit;
+}
+
+/* forms */
+input {
+	outline: none;
+}
+button, input[type=submit] {
+	cursor: pointer;
 }
