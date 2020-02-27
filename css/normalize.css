@@ -88,8 +88,13 @@ article > * + * {
 /* Наследуем шрифты */
 * {
 	font: inherit;
-	font-size: inherit;;
 	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	transition-duration: inherit;
+	text-transform: inherit;
 }
 
 /* forms */
