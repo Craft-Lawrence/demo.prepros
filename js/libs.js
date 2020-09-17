@@ -1,1 +1,1 @@
-// @prepros-prepend jquery.min.js
+// @prepros-prepend libs/jquery.min.js
