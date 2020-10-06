@@ -9,6 +9,9 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	-webkit-transition:.3s;
+	-o-transition:.3s;
+	transition: .3s;
 }
 
 /* Flexbox */
@@ -100,6 +103,8 @@ article > * + * {
 
 /* forms */
 input,button {
+	padding: 0;
+	border: none;
 	outline: none;
 }
 button, input[type=submit] {
