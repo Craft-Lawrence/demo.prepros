@@ -9,9 +9,21 @@
 *::before,
 *::after {
 	box-sizing: border-box;
-	-webkit-transition:.3s;
-	-o-transition:.3s;
+	outline: none;
+}
+
+/* Стандартный transition */
+*,
+*::before,
+*::after {
+	-webkit-transition: .3s;
+	-o-transition: .3s;
 	transition: .3s;
+}
+textarea {
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
 }
 
 /* Flexbox */
@@ -73,6 +85,20 @@ a {
 	text-decoration: none;
 }
 
+/* Подчёркивания при необходимости */
+a.under {
+	text-decoration: underline;
+}
+a.under:hover {
+	text-decoration: none;
+}
+a.hunder {
+	text-decoration: none;
+}
+a.hunder:hover {
+	text-decoration: underline;
+}
+
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
 	text-decoration-skip-ink: auto;
@@ -97,15 +123,13 @@ article > * + * {
 	font-size: inherit;
 	font-weight: inherit;
 	line-height: inherit;
-	transition-duration: inherit;
 	text-transform: inherit;
 }
 
 /* forms */
-input,button {
+input,button,textarea {
 	padding: 0;
 	border: none;
-	outline: none;
 }
 button, input[type=submit] {
 	cursor: pointer;
