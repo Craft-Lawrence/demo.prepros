@@ -24,7 +24,7 @@
 </head>
 <body>
 	<div class="site">
-	
+		
 	</div>
 	
 	<script src="js/libs.min.js?v=<?= filectime('js/libs.min.js') ?>"></script>

@@ -52,6 +52,7 @@ ol {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	list-style-position: inside;
 }
 
 /* Убираем внешние отступы */
@@ -110,11 +111,6 @@ img {
 	display: block;
 }
 
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-	margin-top: 1em;
-}
-
 /* Наследуем шрифты */
 * {
 	font: inherit;
@@ -127,10 +123,18 @@ article > * + * {
 }
 
 /* forms */
-input,button,textarea {
+input,
+button,
+textarea {
 	padding: 0;
 	border: none;
 }
-button, input[type=submit] {
+button,
+input[type=submit] {
 	cursor: pointer;
+}
+
+/* Запрет захвата мышкой картинки */
+img {
+	pointer-events: none;
 }
