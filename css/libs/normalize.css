@@ -109,6 +109,8 @@ a:not([class]) {
 img {
 	max-width: 100%;
 	display: block;
+	user-select: none; /* Запрет выделения картинки */
+	pointer-events: none; /* Запрет захвата мышкой картинки */
 }
 
 /* Наследуем шрифты */
@@ -118,6 +120,7 @@ img {
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: inherit;
+	letter-spacing: inherit;
 	line-height: inherit;
 	text-transform: inherit;
 }
@@ -132,9 +135,4 @@ textarea {
 button,
 input[type=submit] {
 	cursor: pointer;
-}
-
-/* Запрет захвата мышкой картинки */
-img {
-	pointer-events: none;
 }
